@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using UnityWithRepoPattern.App_Start;
 
 namespace UnityWithRepoPattern
 {
@@ -12,10 +13,13 @@ namespace UnityWithRepoPattern
     {
         protected void Application_Start()
         {
+            UnityConfig.RegisterComponents();
+            //IocConfigurator.ConfigureIocUnityContainer();
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
         }
     }
 }

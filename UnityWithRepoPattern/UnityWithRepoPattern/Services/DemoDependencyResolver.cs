@@ -29,16 +29,17 @@ namespace UnityWithRepoPattern.Services
         }
 
         public IEnumerable<object> GetServices(Type serviceType) //this used to resolve the dependency of IEnumerable objects
-        { 
+        {
             {
-            try
-            {
-                return _unitcontainer.ResolveAll(serviceType);
+                try
+                {
+                    return _unitcontainer.ResolveAll(serviceType);
 
-            }
-            catch (Exception)
-            {
-                return new List<object>();
+                }
+                catch (Exception)
+                {
+                    return new List<object>();
+                }
             }
         }
     }

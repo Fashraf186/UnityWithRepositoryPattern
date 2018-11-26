@@ -14,10 +14,7 @@ namespace UnityWithRepoPattern.Controllers
 
         private _IGenericRepo<Course> _Courseobj;
 
-        public CoursesController() : this(new GenericRepo<Course>())
-        {
-        }
-
+        
         public CoursesController(_IGenericRepo<Course> Courseobj)
         {
             _Courseobj = Courseobj;

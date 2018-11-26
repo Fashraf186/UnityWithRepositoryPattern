@@ -29,6 +29,7 @@ namespace UnityWithRepoPattern.App_Start
             container.RegisterType<_IGenericRepo<Course>, GenericRepo<Course>>();
             container.RegisterType<_IGenericRepo<Student>, GenericRepo<Student>>();
             container.RegisterType<_IGenericRepo<Enrollment>, GenericRepo<Enrollment>>();
+          
         }
 
        
