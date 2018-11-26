@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnityWithRepoPattern.Interface
 {
-    interface _IGenericRepo<T> where T : class
+    public interface _IGenericRepo<T> where T : class
     {
         IEnumerable<T> GetAll();
 
